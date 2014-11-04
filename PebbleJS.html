@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+	
+    <title>Pebble Emulator - CloudPebble on Steroids</title>    
+    <script src="./Libraries/jqwidgets-ver3.5.0/scripts/jquery-1.11.1.min.js"></script>    
+    <script src="./Libraries/files/jquery.qtip.min.js"></script>    
+    <link href="./Libraries/files/jquery.qtip.min.css" rel="stylesheet" type="text/css"/>    
+    <link href="./Libraries/emulator/css/virtual-pebble.css" rel="stylesheet" type="text/css"/>
+    <script src="./Libraries/emulator/js/vendors/jquery.jrumble.1.3.min.js"></script>  
+    <script src="./Libraries/emulator/js/vendors/strftime.js"></script>	    
+    <script type="text/javascript" src="./Libraries/jqwidgets-ver3.5.0/scripts/demos.js"></script>
+    <script type="text/javascript" src="./Libraries/jqwidgets-ver3.5.0/jqwidgets/jqxcore.js"></script>
+    <script type="text/javascript" src="./Libraries/jqwidgets-ver3.5.0/jqwidgets/jqxdata.js"></script>
+    <script type="text/javascript" src="./Libraries/jqwidgets-ver3.5.0/jqwidgets/jqxdraw.js"></script>
+    <script type="text/javascript" src="./Libraries/jqwidgets-ver3.5.0/jqwidgets/jqxgauge.js"></script>
+    <script type="text/javascript" src="./Libraries/jqwidgets-ver3.5.0/jqwidgets/jqxbuttons.js"></script>
+    <script type="text/javascript" src="./Libraries/jqwidgets-ver3.5.0/jqwidgets/jqxcheckbox.js"></script>
+    <script type="text/javascript" src="./Libraries/jqwidgets-ver3.5.0/jqwidgets/jqxradiobutton.js"></script>
+    <script type="text/javascript" src="./Libraries/jqwidgets-ver3.5.0/jqwidgets/jqxexpander.js"></script>
+  
+    <script>
+        var APP_INFO_URL = './Libraries/files/appinfo.json';
+        var BUILD_URL = 'http://localhost:8001/builds/8/6/8684f2ec-a3f8-4806-bc4a-872526d78db1/';
+        var BASE_URL = './Libraries/emulator/';
+    </script>
+
+
+    
+</head>
+<body>
+    
+    <div id="Pebble">
+		 
+        <div id="Viewport"></div>
+       
+        <div id="actions">
+            <button class="btn back qtip-tipsy" data-pebble-button="back" data-pebble-button-type="click" title="Click to press this button">BACK</button>
+            <button class="btn up qtip-tipsy" data-pebble-button="up" data-pebble-button-type="click" title="Click to press this button">UP</button>
+            <button class="btn select qtip-tipsy" data-pebble-button="select" data-pebble-button-type="click" title="Click to press this button">SELECT</button>
+            <button class="btn down  qtip-tipsy" data-pebble-button="down" data-pebble-button-type="click" title="Click to press this button">DOWN</button>
+        </div>
+    </div>
+      
+    
+    <script src="./Libraries/emulator/js/PebbleEmulator.js"></script>
+    <script src="./Libraries/emulator/js/VirtualPebble.js"></script>
+    <script src="./Libraries/emulator/js/commands-definition.js"></script>
+    
+    <script src="./Libraries/files/p1.js"></script>
+    <script src="./app.js"></script>
+    <script src="./Libraries/files/p2.js"></script>    
+    <!--script src="/home/marco/Desktop/PebbleProva/files/pebble-js-app.js"></script-->
+    <script>           
+            $('#Pebble').virtualPebble(Pebble);	
+	</script>    
+  
+</body>
+</html>

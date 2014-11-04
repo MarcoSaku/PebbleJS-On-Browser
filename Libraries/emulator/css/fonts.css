@@ -1,0 +1,69 @@
+@font-face {
+  font-family: 'Gothic';
+  src: url('../fonts/gothic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gothic Bold';
+  src: url('../fonts/gothic-bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bitham Black';
+  src: url('../fonts/bitham-black.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bitham Bold';
+  src: url('../fonts/bitham-bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bitham Light';
+  src: url('../fonts/bitham-light.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bitham Light Subset';
+  src: url('../fonts/bitham-light-subset.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bitham Medium Numbers';
+  src: url('../fonts/bitham-medium-numbers.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Bold';
+  src: url('../fonts/roboto-bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url('../fonts/roboto-condensed.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Droid Serif Bold';
+  src: url('../fonts/droid-serif-bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}

@@ -1,0 +1,160 @@
+@import url(fonts.css);
+
+/* Base Style */
+html,body{margin:0;padding:0;height:100%}
+body{background:#fff  50% 95.5% no-repeat;font-family: PFD-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif;}
+
+/* Pebble */
+
+#Pebble{background:#fff;margin-top:0 auto;width: 100%;height: 100%;padding: 0px 0px 0px 0px; margin-top:16px auto 0 auto;position:relative;overflow:hidden}
+
+#Pebble .btn{position:absolute;cursor:pointer;box-shadow:0 0 5px rgba(55,55,55,0.6);padding:5px 5px 4px 5px}
+#Pebble .btn:hover{box-shadow:0 0 5px rgba(255,255,255,0.6)}
+
+#Pebble .btn.back{bottom:1%;left:2%;width:23%;height:8%;text-align:center;vertical-align:middle;line-height:90%}
+#Pebble .btn.up{bottom:1%;left:26%;width:23%;height:8%;line-height:90%}
+#Pebble .btn.select{bottom:1%;left:50%;width:23%;height:8%;line-height:90%}
+#Pebble .btn.down{bottom:1%;left:74%;width:23%;height:8%;line-height:90%}
+
+/* Viewport */
+#Viewport{width: 100%;height: 92%;overflow:hidden;color:#fff;font-family: serif;background:#fff;margin-top:10%}
+#Viewport *{box-sizing: border-box;margin:0;padding:0;border:none}
+#Viewport > div{display:block;width:100%;height:50%;position:absolute;top:0px;left:0px;background:#fff;color:#111;border-radius:3px}
+
+
+
+/* Pebble status bar */
+#StatusBar{background:#000;color:#fff;height:10%;width:100%;text-align:center;font-size:13px;line-height:200%}
+
+/* menu */
+#Viewport .Menu {display:table;width:100%;margin-top:5%}
+#Viewport .Menu .MenuItem{display:table;width:100%}
+#Viewport .Menu .MenuItem > div{vertical-align:middle;width:100%}
+#Viewport .Menu .MenuItem > div.icon{width:100px}
+
+
+#Viewport .Menu .MenuItem > div.title-icon{width:600px}
+#Viewport .Menu .MenuItem.active{color:#fff;background:#aaa}
+#Viewport .Menu .Section > div.title{width:100%}
+#Viewport .Menu .Section {height:50%}
+#Viewport .Menu .MenuItem{border-bottom:1px solid #000}
+
+
+/* card */
+#Viewport .Card{display:table;width:100%;margin-top:10%;height:90%}
+#Viewport .Card .row{display:table;width:100%}
+#Viewport .Card .row > div{display:table-cell;vertical-align:middle;float:none;width:100%;height:100%}
+#Viewport .Card .row .icon{width:28px}
+
+
+/* wTemp */
+#Viewport .WTemp{display:table;width:100%;margin-top:10%;height:90%}
+#Viewport .WTemp .row{display:table;width:100%;margin-top:-3%}
+#Viewport .WTemp .row > div{display:table-cell;vertical-align:middle;float:none;width:100%;height:100%}
+#Viewport .WTemp .row .icon{width:28px}
+
+
+/* stage */
+#Viewport .Stage{background:#fff;color:#000;width:100%;text-align:center;margin-top:10%}
+
+#Viewport .Stage.has-action-bar{padding-right:20px}
+#Viewport .Stage .action-bar{position:absolute;top:3px;right:0px;height:146px;width:20px;z-index:1000;background:#fff;border-radius:3px 0 0 3px;display:block}
+#Viewport .Stage .action-bar.black{background:#000;}
+#Viewport .Stage .action-bar .action{display:block;height:48.5px;line-height:48.5px;text-align:center}
+#Viewport .Stage .action-bar .action-icon{width:12px;height:12px}
+
+
+/* window elements elements */
+.title,.subtitle,.body{display:block;text-align:justify;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;}
+
+
+
+/* Fonts - from PebbleLocalSim
+ **************************************************************************** */
+.RESOURCE_ID_GOTHIC_14{font-family:'Gothic';font-size:8px;line-height:14px}
+.RESOURCE_ID_GOTHIC_14_BOLD{font-family:'Gothic Bold';font-size:8px;line-height:14px;font-weight:bold}
+.RESOURCE_ID_GOTHIC_18{font-family:'Gothic';font-size:10px;line-height:18px}
+.RESOURCE_ID_GOTHIC_18_BOLD{font-family:'Gothic Bold';font-size:10px;line-height:18px;font-weight:bold}
+.RESOURCE_ID_GOTHIC_24{font-family:'Gothic';font-size:14px;line-height:24px}
+.RESOURCE_ID_GOTHIC_24_BOLD{font-family:'Gothic Bold';font-size:14px;line-height:14px;font-weight:bold}
+.RESOURCE_ID_GOTHIC_28{font-family:'Gothic';font-size:18px;line-height:28px}
+.RESOURCE_ID_GOTHIC_28_BOLD{font-family:'Gothic Bold';font-size:18px;line-height:28px;font-weight:bold}
+.RESOURCE_ID_BITHAM_30_BLACK{font-family:'Bitham Black';font-size:30px;line-height:30px}
+.RESOURCE_ID_BITHAM_42_BOLD{font-family:'Bitham Bold';font-size:42px;line-height:42px;font-weight:bold}
+.RESOURCE_ID_BITHAM_42_LIGHT{font-family:'Bitham Light';font-size:42px;line-height:42px}
+.RESOURCE_ID_BITHAM_42_MEDIUM_NUMBERS{font-family:'Bitham Medium Numbers';font-size:42px;line-height:42px}
+.RESOURCE_ID_BITHAM_34_MEDIUM_NUMBERS{font-family:'Bitham Medium Numbers';font-size:34px;line-height:34px}
+.RESOURCE_ID_BITHAM_34_LIGHT_SUBSET{font-family:'Bitham Light Subset';font-size:34px;line-height:34px}
+.RESOURCE_ID_BITHAM_18_LIGHT_SUBSET{font-family:'Bitham Light Subset';font-size:18px;line-height:18px}
+.RESOURCE_ID_ROBOTO_CONDENSED_21{font-family:'Roboto Condensed';font-size:21px;line-height:21px}
+.RESOURCE_ID_ROBOTO_BOLD_SUBSET_49{font-family:'Roboto Bold';font-size:49px;line-height:49px}
+.RESOURCE_ID_DROID_SERIF_28_BOLD{font-family:'Droid Serif Bold';font-size:28px;line-height:28px}
+
+/* Font definitios for windows element */
+
+.title{font-family:'Gothic';font-size:90%;line-height:160%;text-align: center;bottom:20%;left:30%}
+.subtitle{font-family:'Gothic Bold';font-size:80%;line-height:160%;font-weight:bold;text-align: center}
+.body{font-family:'Gothic';font-size:70%;line-height:140%;text-align: center}
+
+.Menu .Section > .title{font-family:'Gothic';font-size:50px;line-height:5px;text-align: center}
+.Menu .MenuItem > .title{font-family:'Gothic Bold';font-size:5px;line-height:20%;font-weight:bold;text-align: center}
+.Menu .MenuItem > .subtitle{font-family:'Gothic Bold';font-size:14px;line-height:14px;font-weight:bold;text-align: center}
+.Menu .MenuItem > .body{font-family:'Gothic';font-size:10px;line-height:18px;text-align: center}
+
+
+/* icon */
+.icon > img{height:24px;width:28px;display:inline-block;float:left}
+
+
+/*
+ * B/W filter (icons,subicon,banner)
+ */
+.icon,.subicon,.banner{
+    filter: grayscale(100%);
+    filter: gray;
+    -webkit-filter: grayscale(1);
+}
+
+
+
+
+
+
+/* Animations
+ ************* */
+
+.pushing{
+    margin:0;
+    -webkit-animation: pushing 750ms; /* Chrome, Safari, Opera */
+    animation: pushing 750ms;
+}
+
+.pushing-back{
+    margin:0;
+    -webkit-animation: pushing-back 750ms; /* Chrome, Safari, Opera */
+    animation: pushing-back 750ms;
+}
+
+
+@-webkit-keyframes pushing {
+    from {margin-left: 144px;}
+    to {margin-left: 0px;}
+}
+
+/* Standard syntax */
+@keyframes pushing {
+    from {margin-left: 144px;}
+    to {margin-left: 0px;}
+} 
+
+
+@-webkit-keyframes pushing-back {
+    from {margin-left: -144px;}
+    to {margin-left: 0px;}
+}
+
+/* Standard syntax */
+@keyframes pushing-back {
+    from {margin-left: -144px;}
+    to {margin-left: 0px;}
+} 

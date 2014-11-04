@@ -1,0 +1,42 @@
+Setting top to                           : /tmp/tmpU4Htrs 
+Setting out to                           : /tmp/tmpU4Htrs/build 
+Checking for program gcc,cc              : arm-none-eabi-gcc 
+Checking for program ar                  : arm-none-eabi-ar 
+Found Pebble SDK in			 : /home/vagrant/sdk2/Pebble
+'configure' finished successfully (0.255s)
+Waf: Entering directory `/tmp/tmpU4Htrs/build'
+[ 1/28] appinfo.auto.c: appinfo.json -> build/appinfo.auto.c
+[ 2/28] menu_icon.png.pbi: resources/images/menu_icon.png ../../home/vagrant/sdk2/Pebble/tools/bitmapgen.py -> build/resources/images/menu_icon.png.pbi
+[ 3/28] logo_splash.png.pbi: resources/images/logo_splash.png ../../home/vagrant/sdk2/Pebble/tools/bitmapgen.py -> build/resources/images/logo_splash.png.pbi
+[ 4/28] tile_splash.png.pbi: resources/images/tile_splash.png ../../home/vagrant/sdk2/Pebble/tools/bitmapgen.py -> build/resources/images/tile_splash.png.pbi
+[ 5/28] UbuntuMono-Regular.ttf.MONO_FONT_14.pfo: resources/fonts/UbuntuMono-Regular.ttf ../../home/vagrant/sdk2/Pebble/tools/font/fontgen.py -> build/resources/fonts/UbuntuMono-Regular.ttf.MONO_FONT_14.pfo
+[ 6/28] app_resources.pbpack.data: build/resources/images/menu_icon.png.pbi build/resources/images/logo_splash.png.pbi build/resources/images/tile_splash.png.pbi build/resources/fonts/UbuntuMono-Regular.ttf.MONO_FONT_14.pfo -> build/app_resources.pbpack.data
+[ 7/28] app_resources.pbpack.table: build/resources/images/menu_icon.png.pbi build/resources/images/logo_splash.png.pbi build/resources/images/tile_splash.png.pbi build/resources/fonts/UbuntuMono-Regular.ttf.MONO_FONT_14.pfo ../../home/vagrant/sdk2/Pebble/tools/pbpack_meta_data.py -> build/app_resources.pbpack.table
+[ 8/28] app_resources.pbpack.manifest: build/app_resources.pbpack.data ../../home/vagrant/sdk2/Pebble/tools/pbpack_meta_data.py -> build/app_resources.pbpack.manifest
+[ 9/28] app_resources.pbpack: build/app_resources.pbpack.manifest build/app_resources.pbpack.table build/app_resources.pbpack.data -> build/app_resources.pbpack
+[10/28] resource_ids.auto.h: build/resources/images/menu_icon.png.pbi build/resources/images/logo_splash.png.pbi build/resources/images/tile_splash.png.pbi build/resources/fonts/UbuntuMono-Regular.ttf.MONO_FONT_14.pfo ../../home/vagrant/sdk2/Pebble/tools/generate_resource_code.py build/app_resources.pbpack.data -> build/src/resource_ids.auto.h
+[11/28] c: src/main.c -> build/src/main.c.11.o
+[12/28] c: src/simply/simply.c -> build/src/simply/simply.c.11.o
+[13/28] c: src/simply/simply_accel.c -> build/src/simply/simply_accel.c.11.o
+[14/28] c: src/simply/simply_menu.c -> build/src/simply/simply_menu.c.11.o
+[15/28] c: src/simply/simply_msg.c -> build/src/simply/simply_msg.c.11.o
+[16/28] c: src/simply/simply_res.c -> build/src/simply/simply_res.c.11.o
+[17/28] c: src/simply/simply_splash.c -> build/src/simply/simply_splash.c.11.o
+[18/28] c: src/simply/simply_stage.c -> build/src/simply/simply_stage.c.11.o
+[19/28] c: src/simply/simply_ui.c -> build/src/simply/simply_ui.c.11.o
+[20/28] c: src/simply/simply_window.c -> build/src/simply/simply_window.c.11.o
+[21/28] c: src/simply/simply_window_stack.c -> build/src/simply/simply_window_stack.c.11.o
+[22/28] c: build/appinfo.auto.c -> build/appinfo.auto.c.11.o
+[23/28] cprogram: build/src/main.c.11.o build/src/simply/simply.c.11.o build/src/simply/simply_accel.c.11.o build/src/simply/simply_menu.c.11.o build/src/simply/simply_msg.c.11.o build/src/simply/simply_res.c.11.o build/src/simply/simply_splash.c.11.o build/src/simply/simply_stage.c.11.o build/src/simply/simply_ui.c.11.o build/src/simply/simply_window.c.11.o build/src/simply/simply_window_stack.c.11.o build/appinfo.auto.c.11.o -> build/pebble-app.elf
+[24/28] pebble-js-app.js: src/js/app.js src/js/lib/ajax.js src/js/lib/emitter.js src/js/lib/image.js src/js/lib/myutil.js src/js/lib/safe.js src/js/lib/util2.js src/js/lib/vector2.js src/js/loader.js src/js/main.js src/js/settings/index.js src/js/settings/settings.js src/js/simply/simply.js src/js/smartpackage/package-pebble.js src/js/smartpackage/package.js src/js/ui/accel.js src/js/ui/card.js src/js/ui/circle.js src/js/ui/element.js src/js/ui/image.js src/js/ui/imageservice.js src/js/ui/index.js src/js/ui/inverter.js src/js/ui/menu.js src/js/ui/propable.js src/js/ui/rect.js src/js/ui/resource.js src/js/ui/simply-pebble.js src/js/ui/simply.js src/js/ui/stage.js src/js/ui/tests.js src/js/ui/text.js src/js/ui/timetext.js src/js/ui/vibe.js src/js/ui/window.js src/js/ui/windowstack.js src/js/vendor/moment.js src/js/vendor/png.js src/js/vendor/zlib.js -> build/src/js/pebble-js-app.js
+[25/28] pebble-app.raw.bin: build/pebble-app.elf -> build/pebble-app.raw.bin
+[26/28] inject-metadata: build/pebble-app.raw.bin build/pebble-app.elf build/app_resources.pbpack.data -> build/pebble-app.bin
+[27/28] tmpU4Htrs.pbw: build/pebble-app.bin build/app_resources.pbpack build/src/js/pebble-js-app.js -> build/tmpU4Htrs.pbw
+[28/28] report-memory-usage: build/pebble-app.elf
+Memory usage:
+=============
+Total app footprint in RAM:      13100 bytes / ~24kb
+Free RAM available (heap):       11476 bytes
+ 
+Waf: Leaving directory `/tmp/tmpU4Htrs/build'
+'build' finished successfully (5.325s)
